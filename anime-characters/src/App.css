@@ -39,9 +39,14 @@
 
 .character-card{
   border: 1px solid black;
-  margin: 5px;
+  margin: 10px;
   text-align: center;
+  max-width: 30rem;
+  border-radius: 5%;
+  box-shadow: 1px 3px grey
+  ;
 }
+
 
 img {
   max-width:50%;
