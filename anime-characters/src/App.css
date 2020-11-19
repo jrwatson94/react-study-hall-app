@@ -39,9 +39,10 @@
 
 .character-card{
   border: 1px solid black;
-  margin: 10px;
+  margin:auto;
+  margin-bottom: 1rem;
   text-align: center;
-  max-width: 30rem;
+  width: 30rem;
   border-radius: 5%;
   box-shadow: 1px 3px grey
   ;
@@ -49,6 +50,11 @@
 
 
 img {
-  max-width:50%;
+  max-width:100%;
   height: 350px;
+  padding: 1rem;
+}
+
+.dropdown{
+  margin: 5rem;
 }

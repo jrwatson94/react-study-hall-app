@@ -3,7 +3,6 @@ import Character from './Character';
 
 class CharacterList extends React.Component{
     renderList = () => {
-        
         if (this.props.characters.length == 1){
             console.log(this.props.characters)
             return <Character {...this.props.characters[0]}/>

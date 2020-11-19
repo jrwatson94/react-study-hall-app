@@ -13,8 +13,9 @@ export default class CharacterForm extends React.Component {
     }
     render(){
         return(
-            <div>
+            <div className="dropdown text-center">
                 <h2>Filter By Name</h2>
+                <br></br>
                 <select onChange={this.updateIndex} className="select-character">
                     <option>All</option>
                     {this.renderOptions()}

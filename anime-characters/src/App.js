@@ -39,6 +39,8 @@ class App extends React.Component {
   render(){
     return (
     <div className="container">
+      <h1 class="text-center">Anime Characters</h1>
+      <hr></hr>
       <CharacterList  characters= {this.state.characters}/>
       <Filter onChangeHandler={this.onChangeHandler} characters={characters}/>
       <CharacterForm newCharacter={this.newCharacter}/>
