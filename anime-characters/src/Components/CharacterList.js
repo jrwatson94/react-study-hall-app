@@ -7,8 +7,9 @@ class CharacterList extends React.Component{
         if (this.props.characters.length == 1){
             console.log(this.props.characters)
             return <Character {...this.props.characters[0]}/>
+        }else{
+            return this.props.characters.map(charObj => <Character {...charObj}/> )
         }
-        // return this.props.characters[0].map(charObj => <Character {...charObj}/> )
     }
     render(){
         return(  

@@ -40,5 +40,10 @@
 .character-card{
   border: 1px solid black;
   margin: 5px;
-  justify-content: center;
+  text-align: center;
+}
+
+img {
+  max-width:50%;
+  height: 350px;
 }

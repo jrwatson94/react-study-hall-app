@@ -19,11 +19,16 @@ class App extends React.Component {
 
   onChangeHandler = (charName) =>{
     const selectedCharacter = characters.filter(char =>char.name=== charName)
-    console.log(selectedCharacter)
-    this.setState({
-      characters: selectedCharacter
-    })
-    console.log(this.state)
+
+    if (charName== "All"){
+      this.setState({
+        characters: characters
+      })
+    }else{
+      this.setState({
+        characters: selectedCharacter
+      })
+    }
   }
 
   
