@@ -1,8 +1,9 @@
 import React from 'react';
+import Character from './Character'
 
 export default class CharacterForm extends React.Component {
     renderOptions = () => {
-
+    return this.props.characters.map(charObj => <option>{charObj.name}</option> )
     }
     render(){
         return(

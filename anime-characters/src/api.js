@@ -8,3 +8,5 @@ const characters = [
     { name: "Appa", img: "https://i.pinimg.com/originals/5b/ac/dd/5bacddbf9477d583ac425aa336196fba.jpg", show: "Avatar" }
 ]
 
+export default characters;
+

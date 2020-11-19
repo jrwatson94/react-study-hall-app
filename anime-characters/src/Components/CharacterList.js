@@ -1,15 +1,18 @@
 import React from 'react';
-import Character from './Character'
+import Character from './Character';
 
-function CharacterList(props){
-    return(
-        <div className="list-container">
-            <h2>Index</h2>
-            <ul>
-                <li><Character /></li>
-            </ul>
-        </div>
-    )
+class CharacterList extends React.Component{
+    renderList = () => {
+        return this.props.characters.map(charObj => <Character {...charObj}/> )
+    }
+    render(){
+        return(  
+            <div className="list-container">
+                <h2>Index</h2>
+                    {this.renderList()}
+            </div>
+        )
+    }
 }
 
 export default CharacterList;
