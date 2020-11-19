@@ -3,6 +3,7 @@ import Character from './Character';
 
 class CharacterList extends React.Component{
     renderList = () => {
+        console.log(this.props.characters)
         return this.props.characters.map(charObj => <Character {...charObj}/> )
     }
     render(){
