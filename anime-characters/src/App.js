@@ -21,7 +21,7 @@ class App extends React.Component {
     const selectedCharacter = characters.filter(char =>char.name=== charName)
     console.log(selectedCharacter)
     this.setState({
-      characters: [selectedCharacter]
+      characters: selectedCharacter
     })
     console.log(this.state)
   }

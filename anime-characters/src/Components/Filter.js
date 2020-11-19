@@ -5,7 +5,6 @@ export default class CharacterForm extends React.Component {
         selectedChar: ""
     }
     updateIndex = (event) =>{
-        console.log(event.target.value)
         this.props.onChangeHandler(event.target.value)
     }
     

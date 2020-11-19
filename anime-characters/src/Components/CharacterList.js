@@ -3,8 +3,12 @@ import Character from './Character';
 
 class CharacterList extends React.Component{
     renderList = () => {
-        console.log(this.props.characters)
-        return this.props.characters.map(charObj => <Character {...charObj}/> )
+        
+        if (this.props.characters.length == 1){
+            console.log(this.props.characters)
+            return <Character {...this.props.characters[0]}/>
+        }
+        // return this.props.characters[0].map(charObj => <Character {...charObj}/> )
     }
     render(){
         return(  

@@ -3,6 +3,7 @@ import React from 'react';
 export default class Character extends React.Component{
     
     render(){
+        console.log(this.props)
         return(
             <div className="character-card">
                 <img src={this.props.img} alt="anime"></img>
