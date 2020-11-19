@@ -8,6 +8,8 @@ export default class CharacterForm extends React.Component {
     }
     submit = (event) => {
         event.preventDefault()
+        console.log("working")
+        console.log(document.getElementById("name").value)
         this.setState({
             name: document.getElementById("name").value,
             anime: document.getElementById("anime").value,
@@ -17,7 +19,7 @@ export default class CharacterForm extends React.Component {
     }
     render(){
         return(
-            <form>
+            <form onSubmit={this.submit}>
                 <h2>Create New Character</h2>
                 <label>Name:</label>
                 <input type="text" id="name"></input>
@@ -30,7 +32,7 @@ export default class CharacterForm extends React.Component {
                 <label>Image Link:</label>
                 <input type="text" id="image"></input>
                 <div>
-                    <button onClick={this.submit} type="submit">Create</button>
+                    <button type="submit">Create</button>
                 </div>
             </form>
         )

@@ -13,8 +13,12 @@ class App extends React.Component {
     characters: characters
   }
   newCharacter= (charObj)=>{
-    characters.push(charObj)
-    console.log(characters)
+    console.log(charObj)
+    const newCharArray = this.state.characters
+    newCharArray.push(charObj)
+    this.setState({
+      characters: newCharArray
+    })
   }
 
   onChangeHandler = (charName) =>{
