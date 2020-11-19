@@ -10,6 +10,12 @@ export default class CharacterForm extends React.Component {
         event.preventDefault()
         console.log("working")
         this.props.newCharacter(this.state)
+        //clear form after submit
+        this.setState({
+            name:"",
+            anime:"",
+            img:""
+        })
     }
 
     changeHandler = (e) => {
